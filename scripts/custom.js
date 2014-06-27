@@ -129,22 +129,29 @@ $(document).ready(function(){
         onkeyup: false,
         rules: {
             name: "required",
-            message: "required",
             email: {
                 required: true,
                 email: true
-            }
+            },
+            phone: "required",
+            zip: "required",
+            age: "required",
+            investment: "required",
         },
         errorPlacement: function(error, element) {
             error.insertBefore(element);
         },
         messages: {
             name: "What's your name?",
-            message: "Type your message",
             email: {
                 required: "What's your email?",
                 email: "Please, enter a valid email"
-            }
+            },
+                phone: "What's your phone #?",
+                zip: "What's your zip code?",
+                age: "How old are you?",
+                investment: "Please enter an amount",
+
         },
 					
         highlight: function(element) {
@@ -176,7 +183,10 @@ $(document).ready(function(){
                 data: {
                     contactname: $('#contact_name').val(),
                     contactemail: $('#contact_email').val(),
-                    contactmessage: $('#contact_message').val()
+                    contactphone: $('#contact_phone').val(),
+                    contactzip: $('#contact_zip').val(),
+                    contactage: $('#contact_age').val(),
+                    contactinvestment: $('#contact_investment').val()
                 },
                 success: function() {
                     $('#contact_submit').button('reset');
