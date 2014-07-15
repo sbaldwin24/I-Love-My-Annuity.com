@@ -5,8 +5,8 @@
 
 <!-- Html Page Specific -->
 <meta charset="utf-8">
-<title>Fixed Indexed Annuities | 100% Safety and Guarantee of Principal</title>
-<meta name="description" content="Startup landing page">
+<title>Fixed Indexed Annuities | ILoveMyAnnuity.com</title>
+<meta name="description" content="I Love My Annuity.com">
 <meta name="author" content="I Love My Annuity.com">
 
 <!-- Mobile Specific -->
@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="css/style.css"/>
 
 <!-- Favicons -->
-<link rel="icon" href="images/favicon.png">
+<link rel="icon" href="images/favicon.ico">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -39,15 +39,18 @@
 
 <body>
 
-
+<!-- PRELOADER -->
+<div id="preloader">
+	<div class="clock">
+		<div class="arrow_sec"></div>
+		<div class="arrow_min"></div>
+	</div>
+</div>
 <div id="wrap"> 
 	
 	<!-- HEADER BEGIN -->
 	<header id="header">
-		<div class="container"> <a href="#" class="logo"> <img src="./images/logo.png" alt="I Love My Annuity.com Logo" height="45" width="400" /> </a>
-		<div style="color:#fff; text-align:right;">
-    	<b><a href="tel:+2142739448" style="color:#fff">214-273-9448</a></b> <br /> CALL NOW TO SPEAK TO AN ANNUITY PROFESSIONAL
-		</div>
+		<div class="container"> <a href="#" class="logo"> <img src="./images/logo.png" class="img-responsive" alt="Responsive image" /></a>
 		</div>
 	</header>
 	<!-- HEADER END --> 
@@ -60,7 +63,7 @@
 					<div class="slogan" >
 						<h2 class="wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.5s">Guarantee 7% growth</h2>
 						<h3 class="wow fadeInLeft" data-wow-delay="0.9s" data-wow-duration="0.5s">with Fixed Index Annuities</h3>
-					<ul class="list">
+						<ul class="list">
 	                  <li><b>100% Safety and Guarantee of Principal</b></li>
 	                  <li><b>Guaranteed Lifetime Income Stream</b></li>
 	                  <li><b>Never lose control of your Principal</b></li>
@@ -68,11 +71,12 @@
 	                  <li><b>7% Compounded Growth Annually</b></li>
 	                  <li><b>Tax-Deferred, Judgment Proof, Avoid Probate</b></li>
                     </ul>
+                    <p><em><strong><center>Please double check your contact information, our reports take betweek 2-3 hours to complete.</center></strong></em></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-lg-offset-2 col-md-5 col-sm-6">
 					<form action="scripts/contact.php" role="form"  id="contact_form">
-						<div class="title wow flipInX" data-wow-duration="0.6s"><center>Compare over 100 different Annuities now!</center></div>
+						<div class="title wow flipInX" data-wow-duration="0.6s"><center>Compare over 100 different Annuities! Get Your Report Now!</center></div>
 						<div class="form-group">
 							<input type="text" class="form-control wow flipInX" data-wow-delay="0.2s" data-wow-duration="0.2s" id="contact_name" placeholder="Full name" name="name">
 						</div>
@@ -80,7 +84,7 @@
 							<input type="email" class="form-control wow flipInX" data-wow-delay=".4s" data-wow-duration="0.4s" id="contact_email" placeholder="Email Address" name="email">
 						</div>
 						<div class="form-group">
-	                  		<input type="text" class="form-control wow flipInX" data-wow-delay="0.6s" data-wow-duration="0.6s" id="contact_phone" placeholder="Phone Number" name="phone">
+	                  		<input type="text" class="form-control wow flipInX" data-wow-delay="0.6s" data-wow-duration="0.6s" id="contact_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number" name="phone">
                     	</div>
 	                	<div class="form-group">
 	                  		<input type="text" class="form-control wow flipInX" data-wow-delay="0.8s" data-wow-duration="0.8s" id="contact_zip" placeholder="Zip Code" name="zip">
@@ -91,13 +95,12 @@
 	                	<div class="form-group">
 	                  		<input type="text" class="form-control wow flipInX" data-wow-delay="1.0s" data-wow-duration="1.0s" id="contact_investment" placeholder="Investment Amount" name="investment">
                     	</div>
-						<button type="submit" class="btn btn_start wow flipInX" data-wow-delay="1.4s" data-wow-duration="1.4s" id="contact_submit" data-complete-text="Thank you!" data-error-text="Oh no, error!"><strong>Get my annuity quotes!</strong><br /> <p style="font-size: 15px;"><strong>*This offer is absolutely free</strong><br /><strong> and we will never share </strong><br /><strong>your personal information</strong></p></button>
-
-
+						<button type="submit" class="btn btn_start wow flipInX" data-wow-delay="1.4s" data-wow-duration="1.2s" id="contact_submit"><strong>Get my annuity quotes!</strong><br /> <p style="font-size: 12px;"><strong>*This offer is absolutely free</strong><br /><strong> and we will never share </strong><br /><strong>your personal information</strong></p></button>
 					</form>
 				</div>
 			</div>
 		</div>
+
 		<div id="slides" data-stellar-ratio="0.4">
 			<div class="slides-container" > <img src="images/1.jpg" alt=""> <img src="images/2.jpg" alt=""> <img src="images/3.jpg" alt=""> </div>
 		</div>
@@ -140,15 +143,13 @@
 	</section>
 	<!-- SERVICES END --> 
 	
-
-	
 	
 	<!-- FOOTER BEGIN -->
 	<footer id="footer">
-		<div class="container"> <a href="#" class="logo"> <img src="./images/logo_dark.png" alt="Guarantee your retirement income" height="45" width="400" /> </a>
+		<div class="container"> <a href="#" class="logo"> <img src="./images/logo_dark.png" class="img-responsive" alt="Responsive image" /> </a>
 			<p>&copy; 2014 I Love My Annuity.com <br>
 				<a href="mailto:contact@ilovemyannuity.com">contact@ilovemyannuity.com</a></p>
-				<p><a href="./privacy.html/" alt="Privacy Policy"><b>Privacy Policy</b></a> | <a target="_blank" href="./about-us.html" title="About Us"><b>About Us</b></a> | <b>15301 Dallas Parkway, Suite 200</b> | <b>Addison, TX 75001</b></p>
+				<p><a href="./privacy.html" alt="Privacy Policy"><b>Privacy Policy</b></a> | <a target="_blank" href="./about-us.html" title="About Us"><b>About Us</b></a> | <b>15301 Dallas Parkway, Suite 200</b> | <b>Addison, TX 75001</b></p>
 
 				<h4>Your information is never sold to a third party and we are committed to maintaining your privacy and security.</h4>
 				<p>A Guaranteed Lifetime Withdrawal Benefit (GLWB) rider is an optional benefit that typically must be elected at issue if the owner(s)/annuitant(s) are within the age specifications as set forth in the contract rider and prospectus. GLWB riders are available for an additional charge and may be irrevocable once elected. GLWB riders guarantee a client can withdraw an annual amount (typically 4% to 7%) of their guaranteed protection amount (GLWB Base) for their entire lifetime. GLWB riders may guarantee withdrawals for one or two lives (typically spouses). Typically the GLWB Base equals contributions plus any bonuses, if applicable, made under the contract. The GLWB Base may accumulate at a minimum rate of growth of 6 to 7% for up to a maximum of 20 years, depending on the issuing company and specific product, or until the first withdrawal, if sooner. Clients may also have the option to “step-up” the GLWB Base to the contract value after a specified waiting period (typically one year). The step-ups could also be automatic in some designs (typically on each contract anniversary). If the step-up occurs, terms, conditions and charges in effect at the time of the step-up may apply. Withdrawals that exceed the annual withdrawal limit may incur applicable surrender charges, negatively affect the GLWB Base, and reduce the contract value and death benefit. Typically any portion of the annual withdrawal limit not withdrawn during a contract year may not be carried over to the next contract year. The GLWB value is not available for a cash withdrawal. The GLWB is an accounting measure used to determine a life income at some time in the future. The minimum amount of time that the income stream can commence is determined by the issuing company and product chosen. Typically clients must allocate assets within specified interest crediting options as set forth in the contract rider and prospectus. These interest crediting options will vary depending on the issuing company and product offered. Fixed index annuities guarantee principal and lock in all gains at specific intervals (most often annually at the contract’s anniversary), depending on the particular annuity purchased. The locked-in increase in the account’s cash value will be determined by the specific interest crediting methods offered and chosen by the annuity purchaser and may be reduced by the annual fee associated with the particular annuity or rider(s) chosen. Fixed Index Annuities (FIAs) performance, repayment, and protection depends upon the soundness of the issuer. Certain annuities may have limited liquidity or carry surrender charges and are not appropriate for everyone. Consider your tax situation, need for liquidity, and long-term goals carefully before purchasing any annuity. Fixed Index Annuities (FIAs) may be subject to participation rates, maximum caps, and/or margins (also known as “index fees”). For any specific FIA product, the participation rate, cap, and/or margin may be subject to change each year. Premiums deposited in fixed index annuities are not invested directly or indirectly in the stock market. Instead, investors in FIAs may choose to have their interest linked to one or more specific market indexes. Please refer to the annuity contract and/or product disclosure for specific terms of a specific FIA with a specific company. Please take your entire financial situation into consideration when considering the purchase of an FIA including, but not limited to your financial objectives, risk tolerance, and investing time frame. When considering the sale of a security or banking product to purchase an FIA, ensure the sale meets your financial objectives and/or risk tolerance. There may be penalties or deferred sales charges to sell certain securities. Ensure the purchase of an FIA is still suitable and in your best interest after any such charges. It is possible for FIAs to return less than the original investment if surrendered before the interest credited or minimum guarantees have overcome the surrender penalties. Therefore, FIAs are long term savings vehicles and should only be considered for long term investment. FIA’s are not FDIC insured; are not obligations or deposits of, and are not guaranteed or underwritten by any bank, savings and loan or credit union or its affiliates; are unrelated to and not a condition of the provision or term of any banking service or activity. None of the Dillon Gage group of companies, nor any agents acting on its behalf, should be viewed as providing legal or tax advice. Consult with and rely on a qualified advisor regarding these matters. </p>
@@ -158,6 +159,40 @@
 	
 </div>
 
+
+<!-- MODALS BEGIN--> 
+<!-- subscribe modal-->
+<div class="modal fade" id="modalSubscribe" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3 class="modal-title"></h3>
+		</div>
+	</div>
+</div>
+<!-- contact modal-->
+<div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3 class="modal-title"></h3>
+		</div>
+	</div>
+</div>
+<!-- MODALS END-->
+
+
+<!-- JavaScript --> 
+<script src="scripts/jquery-1.8.2.min.js"></script> 
+<script src="scripts/bootstrap.min.js"></script> 
+<script src="scripts/owl.carousel.min.js"></script> 
+<script src="scripts/jquery.validate.min.js"></script> 
+<script src="scripts/wow.min.js"></script> 
+<script src="scripts/smoothscroll.js"></script> 
+<script src="scripts/jquery.stellar.min.js"></script> 
+<script src="scripts/jquery.superslides.min.js"></script>
+<script src="scripts/placeholders.jquery.min.js"></script>
+<script src="scripts/custom.js"></script> 
 <!-- MCAFEESECURE -->
 <script type="text/javascript">
   (function() {
@@ -203,22 +238,8 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </script>
 
 <!-- CRAZYEGG ANALYTICS END -->
-
-<!-- JavaScript --> 
-<script src="scripts/jquery-1.8.2.min.js"></script> 
-<script src="scripts/bootstrap.min.js"></script> 
-<script src="scripts/owl.carousel.min.js"></script> 
-<script src="scripts/jquery.validate.min.js"></script> 
-<script src="scripts/wow.min.js"></script> 
-<script src="scripts/smoothscroll.js"></script> 
-<script src="scripts/jquery.stellar.min.js"></script> 
-<script src="scripts/jquery.superslides.min.js"></script>
-<script src="scripts/placeholders.jquery.min.js"></script>
-<script src="scripts/custom.js"></script> 
-
 <!--[if lte IE 9]>
 	<script src="scripts/respond.min.js"></script>
 <![endif]-->
 </body>
 </html>
-

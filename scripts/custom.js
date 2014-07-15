@@ -42,10 +42,12 @@ $(document).ready(function(){
 //						INTRO SUPERSLIDER SETTINGS
 //------------------------------------------------------------------------
 	$("#slides").superslides({
-		play: 8000,
-		animation: "fade",
-		pagination: false,
-		inherit_height_from:"#intro"
+		play: 8000, //Milliseconds before progressing to next slide automatically. Use a falsey value to disable.
+		animation: "fade", //slide or fade. This matches animations defined by fx engine.
+		pagination: false, //Generate pagination. Add an id to your slide to use custom pagination on that slide.
+		inherit_height_from:"#intro" // Accepts window or element selector. Use to constrain slider to an element's height.
+		
+		// more options: https://github.com/nicinabox/superslides
 	});
 		
 
@@ -104,12 +106,25 @@ $(document).ready(function(){
                 },
                 success: function(data) {
                     $('#subscribe_submit').button('reset');
-                    $('.error').html(data);
+					
+					//Use labels to display messages
+                    //$('.error').html(data);
+					
+					//Use modal popups to display messages
+					$('#modalSubscribe .modal-title').html('<i class="icon-envelope-letter"></i>' + data);
+					$('#modalSubscribe').modal('show');
+					
                 },
                 error: function() {
                     $('#subscribe_submit').button('reset');
-                    // Change subscribe form error message text here
-                    $('.error').html('Oops! Something went wrong!');
+					
+                    //Use labels to display messages
+                   	//$('.error').html('Oops! Something went wrong!');
+					
+					//Use modal popups to display messages
+					$('#modalSubscribe .modal-title').html('<i class="icon-ban"></i>Oops!<br>Something went wrong!');
+					$('#modalSubscribe').modal('show');
+					
                 }
             });
         // return false to prevent normal browser submit and page navigation 
@@ -133,7 +148,10 @@ $(document).ready(function(){
                 required: true,
                 email: true
             },
-            phone: "required",
+            phone: {
+                required: true,
+                pattern:"[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            },
             zip: "required",
             age: "required",
             investment: "required",
@@ -151,7 +169,6 @@ $(document).ready(function(){
                 zip: "What's your zip code?",
                 age: "How old are you?",
                 investment: "Please enter an amount",
-
         },
 					
         highlight: function(element) {
@@ -186,15 +203,16 @@ $(document).ready(function(){
                     contactphone: $('#contact_phone').val(),
                     contactzip: $('#contact_zip').val(),
                     contactage: $('#contact_age').val(),
-                    contactinvestment: $('#contact_investment').val()
-                },
+                    contactinvestment: $('#contact_investment').val()                },
                 success: function() {
                     $('#contact_submit').button('reset');
-                    $('#contact_submit').button('complete');
+                    $('#modalContact .modal-title').html('<i class="icon-paper-plane"></i>Thank You for your request!<br>We will be contacting you shortly.');
+                    $('#modalContact').modal('show');
                 },
                 error: function() {
                     $('#contact_submit').button('reset');
-                    $('#contact_submit').button('error');
+                    $('#modalContact .modal-title').html('<i class="icon-ban"></i>Oh no!<br>Something went wrong!');
+                    $('#modalContact').modal('show');
                 }
             });
         // return false to prevent normal browser submit and page navigation 

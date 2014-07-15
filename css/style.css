@@ -58,22 +58,8 @@ ul {
 	padding: 0px;
 	list-style: none;
 }
-ul.list {
-	margin: 0 0 0 30px;
-	padding: 0px;
-	list-style: url(../images/list_mark_ok.png);
-}
 
-ul.list li {
-	padding: 30px 0 0 20px;
-}
-
-
-#wrap {
-	overflow: hidden;
-	margin-bottom: 3px;
-	margin-top: -49px;
-}
+#wrap { overflow: hidden; }
 
 section {
 	padding: 140px 0;
@@ -100,6 +86,53 @@ section {
 .btn.active:focus { outline: 0px auto -webkit-focus-ring-color; }
 
 .placeholdersjs { color: #aaa !important; }
+
+
+
+
+/*----------------------------------------------------------------------------------------
+									MODAL POPUP STYLES
+----------------------------------------------------------------------------------------*/
+.modal {
+	overflow-y: auto;
+	text-align: center;
+}
+
+.modal-content {
+	padding: 80px 20px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+	border-radius: 0;
+	border: 0;
+}
+
+.modal-title { margin:0; }
+
+.modal-title > i{
+	font-size: 48px;
+	padding: 0 0 40px 0;
+	display: block;
+	color:#ccc;
+}
+
+.modal-open { overflow: auto; }
+
+.modal-content .close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+
+.close {
+	font-family: inherit;
+	font-size: 32px;
+	font-weight: 100;
+	text-shadow: none;
+}
+
+
+
+
 
 /*----------------------------------------------------------------------------------------
 									OWL SLIDER STYLES
@@ -283,6 +316,7 @@ header {
 	right: 0;
 	z-index: 2;
 	margin-top: 50px;
+	padding-bottom: 10px;
 }
 
 .logo { float: left; }
@@ -335,7 +369,6 @@ a.login_btn {
 
 a.login_btn:hover { border: 1px solid rgba(255,255,255,1); }
 
-
 /*----------------------------------------------------------------------------------------
 										INTRO
 ----------------------------------------------------------------------------------------*/
@@ -344,14 +377,14 @@ a.login_btn:hover { border: 1px solid rgba(255,255,255,1); }
 #intro {
 	position: relative;
 	width: 100%;
-	top: 0;
 	display: block;
 	z-index: 1;
 	overflow: hidden;
 	background: #000;
 	padding: 0;
+	margin: 0;
 	color: #FFF;
-	margin-top: -50px;
+	margin-top: -25px;
 }
 
 #intro .container {
@@ -373,7 +406,8 @@ a.login_btn:hover { border: 1px solid rgba(255,255,255,1); }
 }
 
 #intro .slogan h2 {
-	font-size: 80px;
+	font-size: 50px;
+	font-weight: 800;
 	color: #FFF;
 	margin: 0;
 }
@@ -388,6 +422,16 @@ a.login_btn:hover { border: 1px solid rgba(255,255,255,1); }
 #intro .slogan p {
 	margin: 60px 0 0 0;
 	opacity: 0.9;
+}
+
+#intro .slogan ul.list {
+	margin: 0 0 0 30px;
+	padding: 0px;
+	list-style: url(../images/list_mark_ok.png);
+}
+
+ul.list li {
+	padding: 30px 0 0 20px;
 }
 
 #intro form .title {
@@ -718,7 +762,10 @@ ul.contact_data_list i { margin: 0 20px 0 0; }
 
 #subscribe_form label.valid {
 	background: #5fb54e;
+	padding:0 20px;
+	line-height:3;
 }
+
 
 /*----------------------------------------------------------------------------------------
 											FOOTER
@@ -738,7 +785,6 @@ footer .logo { float: none; }
 footer .logo img {
 	margin: 0 auto 40px auto;
 	float: none;
-	opacity: 0.2;
 }
 
 
@@ -819,28 +865,8 @@ header { margin-top: 20px; }
 #intro .container { margin: 120px 0 100px 0; }
 }
 
-/*----------------------------------------------------------------------------------------
-									ABOUT US
-----------------------------------------------------------------------------------------*/
 
 
-#about .article, .section {
-	display:block;
-	color:323232;
-	font-size:32px;
-	line-height:22px;
-}
-
-/*----------------------------------------------------------------------------------------
-									PRIVACY POLICY
-----------------------------------------------------------------------------------------*/
-
-#privacy .article, .section {
-	display:block;
-	color:323232;
-	font-size:32px;
-	line-height:22px;
-}
 
 
 /*----------------------------------------------------------------------------------------
