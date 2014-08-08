@@ -320,6 +320,43 @@ header {
 }
 
 .logo { float: left; }
+#Liisa {
+float: left;
+padding: 0;
+margin: 0;
+display: inline-block;
+font-size: 24px;
+color: #ffffff;
+position: relative;
+transform: translateY(-50%);
+top: 45%;
+vertical-align: top;
+background: url('http://i.imgur.com/t59yHqU.png') repeat center;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 80px 80px;
+-webkit-animation:Babe 200s linear infinite;
+}
+
+
+@-webkit-keyframes Babe {
+  0%   { background-position: 0px 10000px; }
+  100% { background-position: 0px 0px; }
+}
+
+
+.FONT1 {
+font-family: 'Yellowtail', cursive;
+}
+.FONT2 {
+font-family: 'Gorditas', cursive;
+}
+.FONT3 {
+font-family: 'Nothing You Could Do', cursive;
+}
+.FONT4 {
+font-family: 'Dawning of a New Day', cursive;
+}
 
 .soc_nav {
 	float: right;
