@@ -427,11 +427,12 @@ a.login_btn:hover { border: 1px solid rgba(255,255,255,1); }
 #intro .slogan ul.list {
 	margin: 0 0 0 30px;
 	padding: 0px;
-	list-style: url(../images/list_mark_ok.png);
+	list-style: url(../images/check.png);
 }
 
 ul.list li {
-	padding: 30px 0 0 20px;
+	padding: 30px 0 -5px 20px;
+	font-size:25px;
 }
 
 #intro form .title {
