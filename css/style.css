@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,700,800);
 
 /*---------------- FONT (OPEN SANS) IMPORT FROM GOOGLE FONTS ---------------*/
 
@@ -384,7 +384,7 @@ a.login_btn:hover { border: 1px solid rgba(255,255,255,1); }
 	padding: 0;
 	margin: 0;
 	color: #FFF;
-	margin-top: -25px;
+	margin-top: -15px;
 }
 
 #intro .container {
